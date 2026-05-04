@@ -30,7 +30,6 @@ async def buy_vip(call: types.CallbackQuery):
     await call.message.answer(f"1$ тўлов учун ссылка:\n{pay_url}", reply_markup=kb)
     await call.answer()
 
-# Render порт очиши учун веб-сервер
 async def handle(request):
     return web.Response(text="Bot is running!")
 
@@ -46,4 +45,3 @@ async def start_bot():
 
 if __name__ == "__main__":
     asyncio.run(start_bot())
-
